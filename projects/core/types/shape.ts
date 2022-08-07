@@ -1,0 +1,1 @@
+export type VnShape = 'rounded' | 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-full'  | 'square';
