@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { VecnaButtonModule } from "@vecna/core";
 
+import { VecnaAddonDocMainModule } from '@vecna/addon-doc';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    VecnaButtonModule
+    VecnaButtonModule,
+    VecnaAddonDocMainModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

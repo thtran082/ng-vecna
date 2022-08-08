@@ -5,7 +5,8 @@
     "baseUrl": "./",
     "paths": {
       "@vecna/core": ["projects/core/index.ts"],
-      "@vecna/core/*": ["projects/core/*"]
+      "@vecna/core/*": ["projects/core/*"],
+      "@vecna/addon-doc": ["projects/addon-doc/src/public-api"],
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
