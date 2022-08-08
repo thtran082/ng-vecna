@@ -5,7 +5,7 @@ import {
   Input,
   NgZone
 } from '@angular/core';
-import { VnAppearance } from '@vecna/core/types';
+import { VnAppearance, VnColor } from '@vecna/core/types';
 import { fromEvent } from 'rxjs';
 
 @Directive({
@@ -21,6 +21,9 @@ export class VnWrapperDirective {
 
   @Input()
   disabled = false;
+
+  @Input()
+  color: VnColor = 'primary';
 
   onClick(event: MouseEvent): void {
     console.log('onClick');

@@ -1,16 +1,13 @@
 import { Component, HostBinding, Input } from '@angular/core';
-import { VnAppearance, VnColor, VnShape } from "@vecna/core/types";
+import { VnAppearance, VnColor, VnShape } from '@vecna/core/types';
 
 @Component({
   selector: 'button[vnButton], a[vnButton]',
   template: `
-    <vn-wrapper
-      [appearance]="appearance"
-      [disabled]="disabled"
-    >
-    <span>
-      <ng-content></ng-content>
-    </span>
+    <vn-wrapper [appearance]="appearance" [disabled]="disabled" [color]="color">
+      <span>
+        <ng-content></ng-content>
+      </span>
     </vn-wrapper>
   `,
 })
@@ -25,7 +22,7 @@ export class VecnaButtonComponent {
 
   @Input()
   @HostBinding('attr.data-color')
-  color: VnColor = 'default';
+  color: VnColor = 'primary';
 
   @Input()
   @HostBinding('attr.data-appearance')

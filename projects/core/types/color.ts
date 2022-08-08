@@ -1,1 +1,1 @@
-export type VnColor = 'primary' | 'accent' | 'warn' | 'secondary' | 'default';
+export type VnColor = 'primary' | 'accent' | 'warn' | 'secondary';
