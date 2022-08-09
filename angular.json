@@ -33,6 +33,9 @@
             "styles": [
               "projects/demo/src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["projects/core/styles"]
+            },
             "scripts": []
           },
           "configurations": {

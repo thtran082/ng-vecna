@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <button vnButton appearance="fill" [disabled]="true">Show button</button>
     <vn-doc-main>
+      Something was wrongs
     <vn-doc-main>
   `,
   styleUrls: ['./app.component.scss'],

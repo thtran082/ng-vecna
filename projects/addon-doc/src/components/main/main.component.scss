@@ -1,9 +1,10 @@
-// @import 'vecna-local';
+@import 'vecna-local.scss';
 
 .vn {
   &-doc {
     &-main {
       // @include createStackingContext();
+      @include createBackground(green);
     }
   }
 }
