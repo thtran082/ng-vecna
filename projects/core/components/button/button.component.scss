@@ -1,0 +1,5 @@
+@import "vecna-local.scss";
+
+.vn-button {
+  @include createStackingContext();
+}
