@@ -1,11 +1,4 @@
-type VnDocPages = VnDocPage[];
-
-type VnDocPage = {
-  route: string;
-  keywords: string;
-  title: string;
-  section: string;
-}
+import { VnDocPages } from '@vecna/addon-doc/types';
 
 export const pages: VnDocPages = [
   {
@@ -13,5 +6,5 @@ export const pages: VnDocPages = [
     keywords: `button, icon-button`,
     route: `/components/button`,
     title: `Button`,
-  }
-]
+  },
+];
