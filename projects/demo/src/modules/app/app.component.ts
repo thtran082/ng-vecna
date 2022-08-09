@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from "@angular/router";
+import { distinctUntilChanged, map } from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,10 @@ import { Component } from '@angular/core';
   providers: [],
 })
 export class AppComponent {
-  constructor() {}
+readonly landing$ = this.router.events.pipe(
+  map(() => this.router.routerState.snapshot.url === '/welcome'),
+  distinctUntilChanged(),
+)
+
+  constructor(private router: Router) {}
 }

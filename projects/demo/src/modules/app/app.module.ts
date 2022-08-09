@@ -4,8 +4,11 @@ import { VecnaButtonModule } from "@vecna/core";
 
 import { VecnaAddonDocMainModule } from '@vecna/addon-doc';
 import { AppComponent } from './app.component';
+import { APP_PROVIDERS } from "./app.provider";
+import { AppRoutingModule } from "./app.routes";
 
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [
     AppComponent
   ],
@@ -13,8 +16,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     VecnaButtonModule,
     VecnaAddonDocMainModule,
+    AppRoutingModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: APP_PROVIDERS,
 })
 export class AppModule { }

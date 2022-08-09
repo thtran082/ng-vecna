@@ -1,4 +1,6 @@
-<button vnButton appearance="fill" [disabled]="true">Show button</button>
-<vn-doc-main>
-  Something was wrongs
+<router-outlet *ngIf="landing$ | async; else documentation"></router-outlet>
+<ng-template #documentation>
   <vn-doc-main>
+    doc main here
+  </vn-doc-main>
+</ng-template>
