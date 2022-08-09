@@ -3,13 +3,7 @@ import { VnAppearance, VnColor, VnShape } from '@vecna/core/types';
 
 @Component({
   selector: 'button[vnButton], a[vnButton]',
-  template: `
-    <vn-wrapper [appearance]="appearance" [disabled]="disabled" [color]="color">
-      <span class="vn-button">
-        <ng-content></ng-content>
-      </span>
-    </vn-wrapper>
-  `,
+  templateUrl: `./button.component.html`,
 })
 export class VecnaButtonComponent {
   @Input()

@@ -2,12 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <button vnButton appearance="fill" [disabled]="true">Show button</button>
-    <vn-doc-main>
-      Something was wrongs
-    <vn-doc-main>
-  `,
+  templateUrl: `./app.component.html`,
   styleUrls: ['./app.component.scss'],
   providers: [],
 })
