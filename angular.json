@@ -30,9 +30,7 @@
               "projects/demo/src/favicon.ico",
               "projects/demo/src/assets"
             ],
-            "styles": [
-              "projects/demo/src/styles.scss"
-            ],
+            "styles": ["projects/demo/src/styles.scss"],
             "stylePreprocessorOptions": {
               "includePaths": ["projects/core/styles"]
             },
@@ -101,9 +99,7 @@
               "projects/demo/src/favicon.ico",
               "projects/demo/src/assets"
             ],
-            "styles": [
-              "projects/demo/src/styles.scss"
-            ],
+            "styles": ["projects/demo/src/styles.scss"],
             "scripts": []
           }
         }
@@ -168,9 +164,7 @@
             "tsConfig": "projects/addon-doc/tsconfig.spec.json",
             "karmaConfig": "projects/addon-doc/karma.conf.js",
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "projects/core/styles"
-              ]
+              "includePaths": ["projects/core/styles"]
             }
           }
         }
