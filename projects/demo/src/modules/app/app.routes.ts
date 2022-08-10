@@ -9,9 +9,14 @@ const routes: Routes = [
   },
   {
     path: `welcome`,
-    loadChildren: () => import('./landing/landing.module').then((m) => m.LandingModule),
+    loadChildren: () => import('./landing').then((m) => m.LandingModule),
   },
-  { path: '**', redirectTo: '/welcome'},
+  {
+    path: `getting-started`,
+    loadChildren: () =>
+      import('./getting-started').then((m) => m.GettingStartedModule),
+  },
+  { path: '**', redirectTo: '/welcome' },
 ];
 
 @NgModule({
