@@ -1,6 +1,6 @@
 <router-outlet *ngIf="landing$ | async; else documentation"></router-outlet>
 <ng-template #documentation>
   <vn-doc-main>
-    doc main here
+    <router-outlet></router-outlet>
   </vn-doc-main>
 </ng-template>

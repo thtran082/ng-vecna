@@ -10,7 +10,7 @@ import { distinctUntilChanged, map } from "rxjs";
 })
 export class AppComponent {
 readonly landing$ = this.router.events.pipe(
-  map(() => this.router.routerState.snapshot.url === '/welcome'),
+  map(() => this.router.routerState.snapshot.url === '/'),
   distinctUntilChanged(),
 )
 

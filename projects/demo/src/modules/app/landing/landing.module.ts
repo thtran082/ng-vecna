@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { VecnaButtonModule } from '@vecna/core';
+import { VecnaButtonModule } from "@vecna/core";
 import { LandingComponent } from './landing.component';
 import { LandingRoutingModule } from "./landing.routes";
 
@@ -8,4 +8,8 @@ import { LandingRoutingModule } from "./landing.routes";
   exports: [LandingComponent],
   imports: [VecnaButtonModule, LandingRoutingModule],
 })
-export class LandingModule {}
+export class LandingModule {
+  constructor() {
+    console.log("loading");
+  }
+}

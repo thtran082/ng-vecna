@@ -4,11 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/welcome',
-    pathMatch: 'full',
-  },
-  {
-    path: `welcome`,
     loadChildren: () => import('./landing').then((m) => m.LandingModule),
   },
   {
@@ -16,11 +11,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./getting-started').then((m) => m.GettingStartedModule),
   },
-  { path: '**', redirectTo: '/welcome' },
+  { path: '**', redirectTo: '/' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
