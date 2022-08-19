@@ -1,0 +1,33 @@
+<div class="vn-table">
+  <table class="">
+    <thead>
+      <tr>
+        <ng-container *ngTemplateOutlet="
+            headers || defaultHeaders;
+            context: { $implicit: data, vnTableHeader: data }
+          "></ng-container>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of data; index as index">
+        <ng-container *ngTemplateOutlet="
+        rows || defaultRows;
+        context: { $implicit: row, vnTableRow: row, index }
+        "></ng-container>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<ng-template #defaultHeaders let-data>
+  <th *ngFor="let header of data[0] | keyvalue">
+    {{ header.key }}
+  </th>
+</ng-template>
+
+<ng-template #defaultRows let-data let-index="index">
+  <td *ngFor="let row of data | keyvalue">
+    {{row.value}}
+  </td>
+</ng-template>
