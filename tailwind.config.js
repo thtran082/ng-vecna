@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      ibm: ["IBM Plex Mono"],
+    }
   },
   plugins: [],
 }
