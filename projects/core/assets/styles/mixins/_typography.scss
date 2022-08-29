@@ -1,21 +1,13 @@
 $textWeights: normal, medium, semibold;
 
-@mixin ibm($type: 'b', $size: '1', $weight: 'normal', $screen: null) {
-  @if ($screen) {
-    @apply #{$screen}: font-ibm;
-    @apply #{$screen}:text-#{$type}#{$size};
-    @apply #{$screen}:font-#{$weight};
-  }
-
-  @else {
-    @apply font-ibm;
-    @apply text-#{$type}#{$size};
-    @apply font-#{$weight};
-  }
+@mixin ibm($type: 'b', $size: '1', $weight: 'normal') {
+  @apply font-ibm;
+  @apply font-#{$weight};
+  @apply text-#{$type}#{$size};
 }
 
 @mixin ibmGenerate($type: 'b', $size: '1') {
-  .#{type}#{i} {
+  .#{$type}#{$size} {
 
     @include ibm($type, $size, 'normal');
 
@@ -27,12 +19,16 @@ $textWeights: normal, medium, semibold;
   }
 }
 
-@mixin generate() {
+@mixin createSetOfTypography() {
   @for $i from 1 through 10 {
     @include ibmGenerate('h', $i);
   }
 
   @for $i from 1 through 5 {
-    @include ibmGenerate('b', $i);
+    //@include ibmGenerate('b', $i);
   }
+}
+
+@mixin gen($color) {
+  background-color: $color;
 }
