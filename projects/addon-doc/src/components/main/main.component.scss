@@ -1,8 +1,19 @@
 @import 'vecna-local.scss';
 
+$sidebar-width: 16.25rem;
+
 .vn {
   &-doc {
     &-main {
+      &-content {
+        margin-left: $sidebar-width;
+
+      }
+
+      &>vn-doc-navigation.vn-doc-navigation {
+        @apply fixed top-[4rem] bottom-0;
+        width: $sidebar-width;
+      }
     }
   }
 }
