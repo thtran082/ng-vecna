@@ -1,8 +1,10 @@
+@import 'vecna-local.scss';
+
 .vn {
   &-doc {
     &-navigation {
       @apply fixed top-0 left-0;
-
+      @include shadow('lg');
     }
   }
 }
