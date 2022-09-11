@@ -3,3 +3,32 @@
   z-index: 0;
 }
 
+@mixin shadow($mode: 'xs') {
+  @if $mode =='xs' {
+    box-shadow: var(--vn-shadow-xs);
+  }
+
+  @if $mode =='sm' {
+    box-shadow: var(--vn-shadow-sm);
+  }
+
+  @if $mode =='md' {
+    box-shadow: var(--vn-shadow-md);
+  }
+
+  @if $mode =='lg' {
+    box-shadow: var(--vn-shadow-lg);
+  }
+
+  @if $mode =='xl' {
+    box-shadow: var(--vn-shadow-xl);
+  }
+
+  @if $mode =='2xl' {
+    box-shadow: var(--vn-shadow-2xl);
+  }
+
+  @if $mode =='3xl' {
+    box-shadow: var(--vn-shadow-3xl);
+  }
+}
