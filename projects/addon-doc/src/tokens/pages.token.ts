@@ -7,3 +7,7 @@ export const VECNA_DOC_PAGES = new InjectionToken<VnDocPages>(
     factory: () => [],
   }
 );
+
+export const VECNA_DOC_LOGO = new InjectionToken<any>('VECNA_DOC_LOGO', {
+  factory: () => null,
+});
