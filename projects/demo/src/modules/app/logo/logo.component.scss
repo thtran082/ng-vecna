@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  align-items: center;
+}
+
+.vn-logo-link {
+  display: flex;
+}
+
+.vn-logo-name {
+  display: flex;
+}
+
+.vn-logo-by {
+  margin-left: 0.75rem;
+  color: var(--vn-cyan-800);
+}

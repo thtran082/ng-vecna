@@ -9,8 +9,4 @@ import { VECNA_DOC_LOGO } from '@vecna/addon-doc/tokens';
 })
 export class VecnaAddonDocHeaderComponent {
   constructor(@Inject(VECNA_DOC_LOGO) public logo: any) {}
-
-  ngAfterViewInit() {
-    console.log(this.logo);
-  }
 }
