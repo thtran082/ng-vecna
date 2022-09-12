@@ -10,6 +10,6 @@ export const APP_PROVIDERS: Provider[] = [
   },
   {
     provide: VECNA_DOC_LOGO,
-    useClass: LogoComponent,
+    useValue: LogoComponent,
   },
 ];
