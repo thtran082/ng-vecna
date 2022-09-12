@@ -1,6 +1,12 @@
 <router-outlet *ngIf="landing$ | async; else documentation"></router-outlet>
 <ng-template #documentation>
   <vn-doc-main>
+    <ng-container ngProjectAs="vnDocHeader">
+      <a href="http://github.com/thtran082/ng-vecna" target="_blank" class="app-link">
+        <img src="assets/images/github.svg" alt="" class="app-github" />
+        GitHub
+      </a>
+    </ng-container>
     <router-outlet></router-outlet>
   </vn-doc-main>
 </ng-template>
