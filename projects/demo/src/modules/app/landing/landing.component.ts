@@ -23,8 +23,4 @@ export class LandingComponent {
       }
     );
   }
-
-  ngOnDestroy() {
-    console.log('destroyed');
-  }
 }
